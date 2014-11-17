@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="CENTER" hgap="0" prefHeight="250.0" prefWidth="325.0" vgap="0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.doverfelt.capitaler.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+         <children>
+            <ToolBar prefHeight="40.0" prefWidth="200.0" VBox.vgrow="NEVER">
+              <items>
+                <Button fx:id="unc" alignment="CENTER" mnemonicParsing="false" onAction="#unCapitalize" text="Uncapitalize" />
+                  <Button fx:id="cap" alignment="CENTER" mnemonicParsing="false" onAction="#capitalize" text="Capitalize" />
+                  <Button fx:id="inv" alignment="CENTER" mnemonicParsing="false" onAction="#invert" text="Invert" />
+              </items>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </ToolBar>
+            <SplitPane dividerPositions="0.5" prefHeight="160.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+              <items>
+                  <VBox prefHeight="200.0" prefWidth="325.0">
+                     <children>
+                        <TextArea fx:id="input" prefHeight="165.0" prefWidth="346.0" promptText="Paste here" VBox.vgrow="ALWAYS" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="325.0">
+                     <children>
+                        <TextArea fx:id="output" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                     </children>
+                  </VBox>
+              </items>
+            </SplitPane>
+         </children>
+      </VBox>
+   </children>
+</GridPane>
