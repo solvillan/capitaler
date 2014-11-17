@@ -1,3 +1,4 @@
+/* © 2014 Rickard Doverfelt */
 package se.doverfelt.capitaler;
 
 import javafx.application.Application;
